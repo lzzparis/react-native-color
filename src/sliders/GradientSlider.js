@@ -12,6 +12,7 @@ const GradientSlider = ({
   gradient,
   onValueChange,
   thumbTintColor
+  animateTransitions = true,
 }) => {
   return (
     <View style={[styles.container, style]}>
@@ -19,7 +20,7 @@ const GradientSlider = ({
       <Slider
         value={value}
         step={step}
-        animateTransitions
+        animateTransitions={animateTransitions}
         animationType="spring"
         thumbTouchSize={{ width: 48, height: 48 }}
         maximumValue={maximumValue}

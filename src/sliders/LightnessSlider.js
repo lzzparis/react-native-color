@@ -10,7 +10,8 @@ const LightnessSlider = ({
   value,
   color,
   onValueChange,
-  gradientSteps
+  gradientSteps,
+  animateTransitions,
 }) => {
   return (
     <GradientSlider
@@ -23,6 +24,7 @@ const LightnessSlider = ({
       value={value}
       thumbTintColor={tinycolor({ ...color, l: value }).toHslString()}
       onValueChange={onValueChange}
+      animateTransitions={animateTransitions}
     />
   );
 };

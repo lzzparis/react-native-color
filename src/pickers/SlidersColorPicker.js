@@ -56,7 +56,8 @@ export class SlidersColorPicker extends Component {
       onCancel,
       okLabel,
       cancelLabel,
-      colorMode
+      colorMode,
+      animateTransitions,
     } = this.props;
     const colorHex = tinycolor(this.state.color).toHexString();
     return (
@@ -123,6 +124,7 @@ export class SlidersColorPicker extends Component {
                 gradientSteps={40}
                 value={this.state.color.h}
                 onValueChange={this.updateHue}
+                animateTransitions={animateTransitions}
               />
               <SaturationSlider
                 style={styles.sliderRow}
@@ -130,6 +132,7 @@ export class SlidersColorPicker extends Component {
                 value={this.state.color.s}
                 color={this.state.color}
                 onValueChange={this.updateSaturation}
+                animateTransitions={animateTransitions}
               />
               <LightnessSlider
                 style={styles.sliderRow}
@@ -137,6 +140,7 @@ export class SlidersColorPicker extends Component {
                 value={this.state.color.l}
                 color={this.state.color}
                 onValueChange={this.updateLightness}
+                animateTransitions={animateTransitions}
               />
             </View>
             <Text style={styles.swatchesText}>{swatchesLabel}</Text>

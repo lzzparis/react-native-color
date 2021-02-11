@@ -28,7 +28,7 @@ With a customizable number of steps, shape and direction.
 
 ## Sliders
 
-The simplest hue/staturation/value selectors!
+The simplest hue/saturation/value selectors!
 
 ![Sliders](images/sliders.png)
 
