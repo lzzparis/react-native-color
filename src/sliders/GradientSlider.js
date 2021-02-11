@@ -11,7 +11,7 @@ const GradientSlider = ({
   maximumValue,
   gradient,
   onValueChange,
-  thumbTintColor
+  thumbTintColor,
   animateTransitions = true,
 }) => {
   return (
